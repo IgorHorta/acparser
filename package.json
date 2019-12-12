@@ -1,0 +1,47 @@
+{
+	"name": "acparser",
+	"displayName": "acParser",
+	"description": "Parsers de arquivos de adquirentes",
+	"version": "0.1.1",
+	"publisher": "acparser",
+	"icon": "images/acparser_logo.png",
+	"engines": {
+		"vscode": "^1.37.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.acparser"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.acparser",
+				"title": "AcParser"
+			}
+		]
+	},
+	"scripts": {
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.6",
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.37.0",
+		"eslint": "^5.16.0",
+		"glob": "^7.1.4",
+		"mocha": "^6.1.4",
+		"typescript": "^3.3.1",
+		"vscode-test": "^1.0.2"
+	},
+	"dependencies": {
+		"@hapi/joi": "^16.1.7",
+		"@hapi/joi-date": "^2.0.1",
+		"balanced-match": "^1.0.0",
+		"vscode": "^1.1.36",
+		"webpack-dev-server": "^3.9.0"
+	}
+}
